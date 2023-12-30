@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #navbar{
+        display: flex;
+        justify-content: space-between;
+       align-items: center;
+       padding-left: 100px;
+       padding-right: 100px;   
+    }
+    #nav-items{
+        display: flex;
+        list-style-type: none;
+        column-gap: 20px;
+    }
+    #left-img img{
+        width: 150px;
+    }
+    #hero-sec img{
+        width: 80%;
+        padding-left: 10%;
+        padding-top: 2%;
+    }
+
+    #sub-hero{
+        padding-left: 35%;
+    }
+
+    #sub-hero h1{
+        margin-top: 30px;
+        font-size: 60px;
+        font-weight: 400;
+    }
+    #sub-hero p{
+        font-size: 30px;
+    }
+    #sub-hero button{
+ 
+       position: relative;
+       left: 25%;
+    }
+    button{
+        
+      background-color: #387ed1;
+      color: white;
+      border-radius: 10px;
+      padding: 20px;
+      width: 200px;
+     font-size: 18px;
+      font-weight: 300; 
+      border-style: none;
+      }
+</style>
+<body>
+    <div id="navbar">
+        <div id="left-img">
+            <img src="data:image/png;base64,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" alt="">
+        </div>
+        <div id="nav-items">
+            <li>Signup</li>
+            <li>About</li>
+            <li>Product</li>
+            <li>Pricing</li>
+            <li>Support</li>
+        </div>
+    </div>
+    <div id="hero-sec">
+        <img src="./images/landing.png" alt="">
+
+    </div>
+
+
+    <div id="sub-hero">
+        <h1><b>Invest in everything</b></h1>
+        <p>Online platform to invest in stocks, derivatives, mutual funds, and more</p>
+        <button>Sign up now </button>
+    </div>
+</body>
+</html>
