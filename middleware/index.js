@@ -1,3 +1,6 @@
+//First run this file the  take url something like(http://localhost:3000/) then paste this
+//link in postman to test
+
 const express = require("express");
 const app = express();
 
